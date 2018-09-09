@@ -1,3 +1,6 @@
 在github上建一个新的txt文件
 然后在本地仓的master上git pull
 再到分支dev上同步master, 看看是不是有什么变化!
+
+可见,在本地仓git pull之后, 会同步远程仓的master分支,这时候,到分支上,
+可以git merge master, 就会同步master最新的文件到分支上,这时候再 git push, 远程分支就会更新master中的文件了!
