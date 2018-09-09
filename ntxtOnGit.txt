@@ -1,3 +1,6 @@
 在github上建一个新的txt文件
 然后在本地仓的master上git pull
 再到分支dev上同步master, 看看是不是有什么变化!
+
+
+在分支上更新之后, 我们又在master上对这个文件做一下修改!然后再本地master git pull, 再到分支上merge, 预计分支合并应该会有冲突！
