@@ -1,1 +1,8 @@
 hello, write something for using the gitHub.com
+
+write something on the branch dev, let's see what happened!
+
+write something at home!
+
+网上修改之后可能长生了冲突,所以先Git pull看一下情况
+并作出了如下修改,现在保存提交
