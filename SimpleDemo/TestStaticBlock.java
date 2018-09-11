@@ -10,6 +10,21 @@ public class TestStaticBlock {
 		x--;
 		myMethod();//static块中int x=5,在执行该方法后,x是1,y是0
 		System.out.println(x + y++ + x);
+		
+		int j = 0;
+		for (int i = 0; i < 100; i++){
+			j=j++;
+			/*
+			 * java用了中间缓存变量的机制
+			 * j=j++
+			 * 实际如下:
+			 * temp = j;
+			 * j = j + 1;
+			 * j = temp;
+			 */
+		}
+		System.out.println(j);//输出0
+		
 	}
 	public static void myMethod(){
 		y = x++ + ++x;
@@ -19,4 +34,5 @@ public class TestStaticBlock {
 		 * + 和运算最后执行
 		 */
 	}
+
 }
