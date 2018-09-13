@@ -1,6 +1,6 @@
 demo使用的Storm版本是Apache-storm-0.93版本
 
-demo是JavaAPI操作storm的小例子
+demo是JavaAPI操作storm的小例子,实现的是单词个数统计的功能
 
 demo1是保证数据至多执行一次的情况,存在丢失的可能性,
 
