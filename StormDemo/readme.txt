@@ -1,0 +1,9 @@
+demo使用的Storm版本是Apache-storm-0.93版本
+
+demo是JavaAPI操作storm的小例子,实现的是单词个数统计的功能
+
+demo1是保证数据至多执行一次的情况,存在丢失的可能性,
+
+demo2是保证了数据至少执行一次,存在重复处理的可能性
+重写ack(),fail()的作用,spout,bolt向collector对象进行锚定
+demo2增加了Java代码对Storm的Worker,Executor及Task数量的设置及注释
