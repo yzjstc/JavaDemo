@@ -1,0 +1,4 @@
+将Flume1.6.0的lib中到包复制到此目录,并build path即可
+即可实现将日志数据写到Flume中
+将log4j的配置为将info信息写到flume中
+可以查看Flume的Guide手册中的Log4J Appender中的sample
