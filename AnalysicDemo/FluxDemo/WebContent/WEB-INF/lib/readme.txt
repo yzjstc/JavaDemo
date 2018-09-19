@@ -1,4 +1,7 @@
+因为log4j的输出写到Flume需要提供Flume-ng-sdk.jar包,而这个jar包对其他包也有依赖,为了简单起见,将整个Flume/lib中的所有jar包都导入路径了
+
 将Flume1.6.0的lib中到包复制到此目录,并build path即可
 即可实现将日志数据写到Flume中
+
 将log4j的配置为将info信息写到flume中
 可以查看Flume的Guide手册中的Log4J Appender中的sample
