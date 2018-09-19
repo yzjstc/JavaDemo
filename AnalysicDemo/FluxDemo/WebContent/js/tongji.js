@@ -370,6 +370,7 @@ function ar_main() {
 	//当前ss状态 格式为"会话id_会话次数_当前时间"
 	var stat_ss = ss_id+"_"+ss_count+"_"+ss_time;
 	//拼接访问地址 增加如上信息
+	//添加随机数,防止浏览器不发请求后端,而读取缓存内容
 	dest=dest_path+"url="+url+"&urlname="+urlname+"&title="+title+"&chset="+charset+"&scr="+screen+"&col="+color+"&lg="+language+"&je="+jvm_enabled+"&ce="+cookie_enabled+"&fv="+flash_ver+"&cnv="+String(Math.random())+"&ref="+ref+"&uagent="+agent+"&stat_uv="+uv_id+"&stat_ss="+stat_ss;
 
 
