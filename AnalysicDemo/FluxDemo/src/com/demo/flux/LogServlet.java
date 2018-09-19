@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.sun.istack.internal.logging.Logger;
+import org.apache.log4j.Logger;
 
 public class LogServlet extends HttpServlet {
 	
