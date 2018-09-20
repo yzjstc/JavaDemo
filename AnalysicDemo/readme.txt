@@ -32,6 +32,16 @@ create table tongji1 (reportTime string,pv int,uv int,vv int,br double,newip int
 
 ./hive -d today=2018-09-18 -f ./tongji1.hql
 
+-------自行化脚本------
+1.编写脚本
+2.crontab -u root -e
+*/1 * * * * /bin/sh 需要执行的脚本绝对路径
+保存退出
+3.service crond reload
+
+注意:脚本如果 chmod 755 脚本文件名,crontab的任务命令可以不添加/bin/sh
+------------------------
+ 
 利用sqoop将结果导出到数据库中
 先到数据库中建表:
 create database fluxdb;
