@@ -1,0 +1,16 @@
+hello
+world
+hello
+python
+hello
+hadoop
+scala
+spark
+I
+like
+Spark
+MapReduce
+is
+a
+useful
+process

@@ -1,6 +1,15 @@
 package com.demo.scala
 
 object Demo01 {
+  //main方法是入口,只有在object单例对象中的main方法才是入口,class类中定义main方法不是入口
+  //另外,还可以通过继承Application接口来作为入口
+  /*
+   * 继承Application作为入口有副作用:
+   * 1.无法接受命令行中的args参数,因为args参数不会被传入
+   * 2.在scala中,如果一个程序是多线程的,那该程序必须具有一个main方法,所以第二种写法只适用于单线程
+   * 3.Application这个接口在执行一个程序的代码之前,会进行一些初始化,而有些jvm不会对这些初始化代码进行优化
+   * 一般都不用Application,了解下,然后忘了它
+   */
   def main(args: Array[String]): Unit = {
 //    val str1 = "abcdefg";
 //    val c1 = str1.charAt(1);//scala是完全兼容java的,所以原有的API依然可以在scala中使用
